@@ -1,0 +1,10 @@
+CREATE SCHEMA IF NOT EXISTS `cliente` DEFAULT CHARACTER SET utf8 ;
+USE `cliente` ;
+
+CREATE TABLE IF NOT EXISTS `cliente`.`tb_cliente` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `telefone` INT(11),
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
